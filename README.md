@@ -1,16 +1,30 @@
-# untitled7
+🔐 Secure Notes System (Flutter)
 
-A new Flutter project.
+A simple yet secure mobile application built using Flutter that allows users to create, store, and manage personal notes with encryption. This app ensures privacy by encrypting all notes before saving them locally.
 
-## Getting Started
+✨ Features
+🔑 User Authentication (Login & Signup)
+🔐 AES Encryption for secure note storage
+📝 Add, view, and delete notes
+💾 Local storage using SharedPreferences
+🚪 Logout functionality
+🌙 Dark theme UI for better user experience
+🛠️ Tech Stack
+Flutter (Dart) – Frontend framework
+SharedPreferences – Local data storage
+encrypt package (AES) – Data encryption
+🔒 Security
 
-This project is a starting point for a Flutter application.
+All notes are encrypted using AES encryption before being stored locally. Only decrypted when displayed to the authenticated user.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📱 How It Works
+User signs up and credentials are stored locally.
+On login, credentials are verified.
+Notes are added and encrypted before saving.
+Stored notes are decrypted only when displayed.
+Users can delete notes anytime.
+🚀 Future Improvements
+Biometric authentication (Fingerprint/Face ID)
+Cloud backup (Firebase)
+Stronger key management
+Password hashing instead of plain storage
